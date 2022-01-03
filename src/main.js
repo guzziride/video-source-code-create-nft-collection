@@ -216,9 +216,13 @@ const drawElement = (_renderObject, _index, _layersLen) => {
 
 const constructLayerToDna = (_dna = "", _layers = []) => {
   let mappedDnaToLayers = _layers.map((layer, index) => {
+    // console.log('** In constructLayerToDna - _dna: ', _dna);
+    // console.log('** In constructLayerToDna - DNA_DELIMITER: ', DNA_DELIMITER);
     let selectedElement = layer.elements.find(
       (e) => e.id == cleanDna(_dna.split(DNA_DELIMITER)[index])
     );
+
+//    console.log('** In constructLayerToDna - selected element: ', selectedElement);
     return {
       name: layer.name,
       blend: layer.blend,
@@ -355,10 +359,10 @@ const startCreating = async () => {
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
       let newDna = createDna(layers);
+
       if (isDnaUnique(dnaList, newDna)) {
         let results = constructLayerToDna(newDna, layers);
         let loadedElements = [];
-
         results.forEach((layer) => {
           loadedElements.push(loadLayerImg(layer));
         });

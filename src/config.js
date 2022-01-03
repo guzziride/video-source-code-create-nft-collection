@@ -5,8 +5,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "NGINZ";
+const description = "NGINZ Test - TIB";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
@@ -26,13 +26,27 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 5,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      // { name: "Background" },
+      // { name: "Eyeball" },
+      // { name: "Eye color" },
+      // { name: "Iris" },
+      // { name: "Shine" },
+      // { name: "Bottom lid" },
+      // { name: "Top lid" },
+      { name: "1 BGS" },
+      { name: "2 BODY COLORS" },
+      { name: "3 SPARKLES" },
+      { name: "4 LIGHTS" },
+      { name: "5 EYES" },
+      { name: "6 GLASS" },
+      { name: "7 TIRES" },
+      { name: "8 RIMS" },
+      { name: "9 EXH" },
+      { name: "10 LINE" },
+      { name: "11 SKINS" },
+      { name: "12 SPOILERS" },
+      { name: "13 FX-1" },
+      { name: "14 FX-2" },
     ],
   },
 ];
@@ -42,8 +56,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1000,
+  height: 1000,
   smoothing: false,
 };
 
@@ -79,7 +93,7 @@ const background = {
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz",
+  external_url: "https://nginz.art",
 };
 
 const rarityDelimiter = "#";
