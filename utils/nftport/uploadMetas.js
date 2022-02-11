@@ -12,8 +12,8 @@ const writter = fs.createWriteStream(`${basePath}/build/json/_ipfsMetas.json`, {
   flags: "a",
 });
 writter.write("[");
-const readDir = `${basePath}/build/json`;
-fileCount = fs.readdirSync(readDir).length - 2;
+const readDir = `${basePath}/build/json`; // When uploading generic JSON use build/genericJson directory
+fileCount = fs.readdirSync(readDir).length - 2; // When uploading generic JSON remove the "-2"
 
 fs.readdirSync(readDir).forEach((file) => {
   if (file === "_metadata.json" || file === "_ipfsMetas.json") return;
@@ -25,7 +25,7 @@ fs.readdirSync(readDir).forEach((file) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: AUTH,
+      Authorization: '2e6a33a7-6814-4ac3-a79e-e62802f3a938', // Insert API key
     },
     body: jsonFile,
   };

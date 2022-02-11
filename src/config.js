@@ -6,47 +6,30 @@ const network = NETWORK.eth;
 
 // General metadata for Ethereum
 const namePrefix = "NGINZ";
-const description = "NGINZ Test - TIB";
+const description = "NGINZ";
 const baseUri = "ipfs://NewUriToReplace";
-
-const solanaMetadata = {
-  symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
-  creators: [
-    {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
-      share: 100,
-    },
-  ],
-};
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 1000,
     layersOrder: [
-      // { name: "Background" },
-      // { name: "Eyeball" },
-      // { name: "Eye color" },
-      // { name: "Iris" },
-      // { name: "Shine" },
-      // { name: "Bottom lid" },
-      // { name: "Top lid" },
       { name: "1 BGS" },
-      { name: "2 BODY COLORS" },
-      { name: "3 SPARKLES" },
-      { name: "4 LIGHTS" },
-      { name: "5 EYES" },
-      { name: "6 GLASS" },
-      { name: "7 TIRES" },
-      { name: "8 RIMS" },
-      { name: "9 EXH" },
-      { name: "10 LINE" },
-      { name: "11 SKINS" },
-      { name: "12 SPOILERS" },
-      { name: "13 FX-1" },
-      { name: "14 FX-2" },
+      { name: "2 SHADE" },
+      { name: "3 BODY COLORS" },
+      { name: "4 SPARKLES" },
+      { name: "5 LIGHTS" },
+      { name: "6 EYES" },
+      { name: "7 GLASS" },
+      { name: "8 TIRES" },
+      { name: "9 RIMS" },
+      { name: "10 EXH" },
+      { name: "11 LINE" },
+      { name: "12 SKINS" },
+      { name: "13 SPOILERS" },
+      { name: "15 PERSONALITY" },
+      { name: "14 MOUTH" },
+      { name: "16 FX" },
     ],
   },
 ];
@@ -132,7 +115,7 @@ module.exports = {
   text,
   namePrefix,
   network,
-  solanaMetadata,
+  // solanaMetadata,
   gif,
   preview_gif,
 };

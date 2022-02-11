@@ -17,7 +17,7 @@ fs.readdirSync(`${basePath}/build/images`).forEach((file) => {
   let options = {
     method: "POST",
     headers: {
-      Authorization: AUTH,
+      Authorization: '2e6a33a7-6814-4ac3-a79e-e62802f3a938', // Insert API Key
     },
     body: formData,
   };
