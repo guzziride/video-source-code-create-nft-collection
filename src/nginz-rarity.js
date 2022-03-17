@@ -17,10 +17,10 @@ let sortedWorksheet = workbook.addWorksheet('Individual_Sorted');
   let tally = {
     "1 BGS" : {},
     "2 SHADE" : {},
-    "3 BODY COLORS" : {},
-    "4 SPARKLES" : {},
-    "5 LIGHTS" : {},
-    "6 EYES" : {},
+    "3 STARS" : {},
+    "4 BODY COLORS" : {},
+    "5 SPARKLES" : {},
+    "6 LIGHTS" : {},
     "7 GLASS" : {},
     "8 TIRES" : {},
     "9 RIMS" : {},
@@ -28,9 +28,10 @@ let sortedWorksheet = workbook.addWorksheet('Individual_Sorted');
     "11 LINE" : {},
     "12 SKINS" : {},
     "13 SPOILERS" : {},
-    "14 MOUTH" : {},
-    "15 PERSONALITY" : {},
-    "16 FX" : {},
+    "14 PERSONALITY" : {},
+    "15 MOUTH" : {},
+    "16 EYES" : {},
+    "17 FX" : {},
   };
 
 
